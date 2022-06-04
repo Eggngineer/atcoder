@@ -32,7 +32,7 @@ input = sys.stdin.readline
 N = int(input().rstrip('\n'))
 
 # mlt integer as mlt var
-N, M = int(input().rstrip('\n').split())
+N, M = map(int,input().rstrip('\n').split())
 
 # mlt integer as a list
 A = list(map(int, input().rstrip('\n').split()))
