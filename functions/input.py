@@ -27,21 +27,22 @@ Fast Input
 """
 import sys
 input = sys.stdin.readline
+sys.setrecursionlimit(10**9)
 
 # one integer
-N = int(input().rstrip('\n'))
+N = int(input())
 
 # mlt integer as mlt var
-N, M = map(int,input().rstrip('\n').split())
+N, M = map(int,input().split())
 
 # mlt integer as a list
-A = list(map(int, input().rstrip('\n').split()))
+A = list(map(int, input().split()))
 
 # mlt col one integer as a list
-A = [int(input().rstrip('\n')) for _ in range()]
+A = [int(input()) for _ in range()]
 
 # mlt col mlt integer as a 2-dim list
-A = [list(map(int, input().rstrip('\n').split())) for _ in range()]
+A = [list(map(int, input().split())) for _ in range()]
 
 
 #------------------------------------------------------------------
