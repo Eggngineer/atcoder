@@ -45,7 +45,6 @@ A = [int(input()) for _ in range()]
 # mlt col mlt integer as a 2-dim list
 A = [list(map(int, input().split())) for _ in range()]
 
-
 # ------------------------------------------------------------------
 #                           CHARACTER
 # ------------------------------------------------------------------
