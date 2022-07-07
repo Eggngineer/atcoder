@@ -1,6 +1,6 @@
-#------------------------------------------------------------------
+# ------------------------------------------------------------------
 #                            NUMBER
-#------------------------------------------------------------------
+# ------------------------------------------------------------------
 
 """
 Nomally Input
@@ -8,6 +8,10 @@ Nomally Input
 
 # input : N(int)
 # one integer
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10**9)
+
 N = int(input())
 
 # input : N(int) M(int)
@@ -25,15 +29,12 @@ A = [list(map(int, input().split())) for i in range(M)]
 """
 Fast Input
 """
-import sys
-input = sys.stdin.readline
-sys.setrecursionlimit(10**9)
 
 # one integer
 N = int(input())
 
 # mlt integer as mlt var
-N, M = map(int,input().split())
+N, M = map(int, input().split())
 
 # mlt integer as a list
 A = list(map(int, input().split()))
@@ -45,9 +46,9 @@ A = [int(input()) for _ in range()]
 A = [list(map(int, input().split())) for _ in range()]
 
 
-#------------------------------------------------------------------
+# ------------------------------------------------------------------
 #                           CHARACTER
-#------------------------------------------------------------------
+# ------------------------------------------------------------------
 
 """
 Nomally Input
@@ -72,7 +73,6 @@ A = [list(map(str, input().split())) for i in range(M)]
 """
 Fast Input
 """
-import sys
 input = sys.stdin.readline
 
 # one integer
@@ -81,7 +81,7 @@ N = str(input().rstrip('\n'))
 # mlt integer as mlt var
 N, M = str(input().rstrip('\n').split())
 
-# mlt integer as a list 
+# mlt integer as a list
 A = list(map(str, input().rstrip('\n').split()))
 
 # mlt col one integer as a list
