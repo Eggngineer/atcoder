@@ -3,15 +3,16 @@ import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(10**9)
 
-n = int(input())
-v = list(map(int, input().split()))
+a, b = map(int, input().split())
 
-v = sorted(v)
+ans = 0
 
-ans = v[0]/(2**(n-1))
-
-for i in range(1, n):
-    w = 1/(2**(n-i))
-    ans += v[i]*w
+for i in range(10000+1):
+    ia, ib = i*0.08//1, i*0.1//1
+    if ia == a//1 and ib == b//1:
+        ans = i
+        break
+else:
+    ans = -1
 
 print(ans)
